@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Profile Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+</head>
+<body>
+    <div class="container result-container">
+        <h2>{{ analysis.name }} ({{ analysis.username }})</h2>
+        <p><strong>Bio:</strong> {{ analysis.bio }}</p>
+        <p><strong>Public Repos:</strong> {{ analysis.public_repos }}</p>
+        <p><strong>Followers:</strong> {{ analysis.followers }} | <strong>Following:</strong> {{ analysis.following }}</p>
+        
+        <!-- Profile Score -->
+        <p><strong>Profile Strength:</strong> {{ analysis.profile_score }} / 100</p>
+        
+        <!-- Visual Stars (optional 5-star rating based on profile score) -->
+        <p><strong>Profile Rating:</strong>
+            {% for i in range(1,6) %}
+                {% if i <= (analysis.profile_score / 20)|round(0,'floor') %}
+                    <span class="star">&#9733;</span>
+                {% else %}
+                    <span class="star" style="color:gray">&#9733;</span>
+                {% endif %}
+            {% endfor %}
+        </p>
+
+        <!-- Total Stars -->
+        <p><strong>Total Stars:</strong> {{ analysis.total_stars }} <span class="star">&#9733;</span></p>
+
+        <!-- Top Languages -->
+        <p><strong>Top Languages:</strong></p>
+        <ul>
+            {% for lang, count in analysis.top_languages.items() %}
+                <li>{{ lang }}: {{ count }} repo{{ 's' if count > 1 else '' }}</li>
+            {% endfor %}
+        </ul>
+
+        <a href="/" class="btn-back">Analyze Another</a>
+    </div>
+</body>
+</html>
