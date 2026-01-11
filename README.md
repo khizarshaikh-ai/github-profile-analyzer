@@ -27,7 +27,7 @@
 ---
 
 ## **Demo**
-Insert screenshots or GIF here:  
+<img width="1919" height="866" alt="image" src="https://github.com/user-attachments/assets/da63de67-d232-43fd-8683-4086e694e4a4" />
 - Homepage: Enter GitHub username  
 - Result page: Profile score, stars, top languages  
 
