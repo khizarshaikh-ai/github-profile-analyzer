@@ -28,7 +28,11 @@
 
 ## **Demo**
 <img width="1919" height="866" alt="image" src="https://github.com/user-attachments/assets/da63de67-d232-43fd-8683-4086e694e4a4" />
-- Homepage: Enter GitHub username  
+
+- Homepage: Enter GitHub username
+  
+<img width="1919" height="876" alt="image" src="https://github.com/user-attachments/assets/4dfe945d-1ff1-4514-bc04-95ab78de13a8" />
+
 - Result page: Profile score, stars, top languages  
 
 ---
