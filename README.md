@@ -69,17 +69,12 @@ python app.py
 
 Usage
 
-Enter a GitHub username on the homepage
-
-Click Analyze
-
-View:
-
-Profile Strength (0–100)
-
-Total Stars (numeric + 5-star visual)
-
-Top Languages and repo count
+- Enter a GitHub username on the homepage
+- Click Analyze
+- View:
+- Profile Strength (0–100)
+- Total Stars (numeric + 5-star visual)
+- Top Languages and repo count
 
 Project Structure
 ```
